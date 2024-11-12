@@ -13,41 +13,57 @@ WEBSOCKET_URL = "ws://localhost:8000/live/"  # WebSocket endpoint for live camer
 class ANPRFrontend:
     def __init__(self, root):
         self.root = root
-        self.root.title("ANPR Frontend")
-        self.root.geometry("700x600")
+        self.root.title("ANPR System")
+        self.root.geometry("800x700")
 
-        # Selected file path
-        self.file_path = None
+        # Main container with padding
+        main_container = tk.Frame(root, padx=20, pady=15)
+        main_container.pack(fill=tk.BOTH, expand=True)
 
-        # Button to select file
-        self.select_button = tk.Button(root, text="Select Image/Video", command=self.select_file)
-        self.select_button.pack(pady=10)
+        # File Selection Frame
+        file_frame = tk.LabelFrame(main_container, text="File Selection", padx=10, pady=10)
+        file_frame.pack(fill=tk.X, pady=(0, 15))
 
-        # Label to display selected file
-        self.file_label = tk.Label(root, text="No file selected")
-        self.file_label.pack(pady=5)
+        self.select_button = tk.Button(file_frame, text="Select Image/Video", command=self.select_file,
+                                     width=15, relief=tk.GROOVE)
+        self.select_button.pack(side=tk.LEFT, padx=5)
 
-        # Button to upload file
-        self.upload_button = tk.Button(root, text="Upload and Analyze", command=self.upload_file, state=tk.DISABLED)
-        self.upload_button.pack(pady=10)
+        self.upload_button = tk.Button(file_frame, text="Upload and Analyze", command=self.upload_file,
+                                     state=tk.DISABLED, width=15, relief=tk.GROOVE)
+        self.upload_button.pack(side=tk.LEFT, padx=5)
 
-        # Separator
-        separator = tk.Frame(root, height=2, bd=1, relief=tk.SUNKEN)
-        separator.pack(fill=tk.X, padx=5, pady=10)
+        self.file_label = tk.Label(file_frame, text="No file selected", fg="gray")
+        self.file_label.pack(side=tk.LEFT, padx=10)
 
-        # Live Camera Controls
-        self.live_frame = tk.Frame(root)
-        self.live_frame.pack(pady=10)
+        # Live Camera Frame
+        camera_frame = tk.LabelFrame(main_container, text="Live Camera Control", padx=10, pady=10)
+        camera_frame.pack(fill=tk.X, pady=(0, 15))
 
-        self.start_live_button = tk.Button(self.live_frame, text="Start Live Camera", command=self.start_live_camera)
-        self.start_live_button.pack(side=tk.LEFT, padx=10)
+        self.start_live_button = tk.Button(camera_frame, text="Start Live Camera", command=self.start_live_camera, width=15, relief=tk.GROOVE)
+        self.start_live_button.pack(side=tk.LEFT, padx=5)
 
-        self.stop_live_button = tk.Button(self.live_frame, text="Stop Live Camera", command=self.stop_live_camera, state=tk.DISABLED)
-        self.stop_live_button.pack(side=tk.LEFT, padx=10)
+        self.stop_live_button = tk.Button(camera_frame, text="Stop Live Camera", command=self.stop_live_camera, state=tk.DISABLED, width=15, relief=tk.GROOVE)
+        self.stop_live_button.pack(side=tk.LEFT, padx=5)
 
-        # ScrolledText to display results
-        self.result_text = scrolledtext.ScrolledText(root, width=80, height=25)
-        self.result_text.pack(pady=10)
+        # Results Frame
+        results_frame = tk.LabelFrame(main_container, text="Recognition Results", padx=10, pady=10)
+        results_frame.pack(fill=tk.BOTH, expand=True)
+
+        # ScrolledText with better styling
+        self.result_text = scrolledtext.ScrolledText(
+            results_frame, 
+            width=80, 
+            height=25,
+            font=('Consolas', 10),
+            wrap=tk.WORD,
+            padx=5,
+            pady=5
+        )
+        self.result_text.pack(fill=tk.BOTH, expand=True)
+
+        # Status bar
+        self.status_bar = tk.Label(main_container, text="Ready", bd=1, relief=tk.SUNKEN, anchor=tk.W)
+        self.status_bar.pack(fill=tk.X, pady=(10, 0))
 
         # WebSocket thread control
         self.ws = None
@@ -70,15 +86,18 @@ class ANPRFrontend:
             self.upload_button.config(state=tk.NORMAL)
             self.result_text.delete(1.0, tk.END)
             self.result_text.insert(tk.END, "File selected. Ready to upload.\n")
+            self.status_bar.config(text=f"Selected: {os.path.basename(filepath)}")
         else:
             self.file_label.config(text="No file selected")
             self.upload_button.config(state=tk.DISABLED)
+            self.status_bar.config(text="Ready")
 
     def upload_file(self):
         if not self.file_path:
             messagebox.showwarning("No File", "Please select a file to upload.")
             return
 
+        self.status_bar.config(text="Uploading file...")
         self.result_text.insert(tk.END, f"Uploading {os.path.basename(self.file_path)}...\n")
         try:
             with open(self.file_path, "rb") as f:
@@ -88,10 +107,13 @@ class ANPRFrontend:
             if response.status_code == 200:
                 data = response.json()
                 self.display_results(data)
+                self.status_bar.config(text="Analysis complete")
             else:
                 self.result_text.insert(tk.END, f"Error {response.status_code}: {response.json().get('detail')}\n")
+                self.status_bar.config(text="Error during upload")
         except Exception as e:
             self.result_text.insert(tk.END, f"An error occurred: {str(e)}\n")
+            self.status_bar.config(text="Error during upload")
 
     def display_results(self, data):
         self.result_text.insert(tk.END, f"Filename: {data.get('filename')}\n")
