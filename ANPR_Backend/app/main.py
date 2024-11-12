@@ -96,7 +96,7 @@ async def live_camera(websocket: WebSocket):
                 await websocket.send_json({"status": "scanning", "message": "No plates detected"})
             
             # Increased delay to reduce server load
-            await asyncio.sleep(0.2)  # 200ms delay between processing frames
+            await asyncio.sleep(0.1)  # 100ms delay between processing frames
             
     except WebSocketDisconnect:
         print("Client disconnected")

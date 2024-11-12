@@ -4,3 +4,8 @@ opencv-python
 easyocr
 Pillow
 python-multipart
+websockets
+numpy
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv

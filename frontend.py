@@ -16,69 +16,151 @@ WEBSOCKET_URL = "ws://localhost:8000/live/"  # WebSocket endpoint for live camer
 class ANPRFrontend:
     def __init__(self, root):
         self.root = root
-        self.root.title("ANPR System")
-        self.root.geometry("800x700")
+        self.root.title("License Plate Recognition System")
+        self.root.geometry("1000x800")
+        self.root.configure(bg='#f0f0f0')  # Light gray background
 
         # Main container with padding
-        main_container = tk.Frame(root, padx=20, pady=15)
+        main_container = tk.Frame(root, padx=25, pady=20, bg='#f0f0f0')
         main_container.pack(fill=tk.BOTH, expand=True)
 
-        # File Selection Frame
-        file_frame = tk.LabelFrame(main_container, text="File Selection", padx=10, pady=10)
+        # Title
+        title_label = tk.Label(main_container, 
+                             text="License Plate Recognition System",
+                             font=('Helvetica', 16, 'bold'),
+                             bg='#f0f0f0',
+                             pady=10)
+        title_label.pack()
+
+        # File Selection Frame with improved styling
+        file_frame = tk.LabelFrame(main_container, 
+                                 text="Image/Video Upload", 
+                                 padx=15, 
+                                 pady=15,
+                                 font=('Helvetica', 10, 'bold'),
+                                 bg='#ffffff',
+                                 relief=tk.GROOVE)
         file_frame.pack(fill=tk.X, pady=(0, 15))
 
-        self.select_button = tk.Button(file_frame, text="Select Image/Video", command=self.select_file,
-                                     width=15, relief=tk.GROOVE)
+        self.select_button = tk.Button(file_frame, 
+                                     text="Select File", 
+                                     command=self.select_file,
+                                     width=15, 
+                                     relief=tk.GROOVE,
+                                     bg='#4a90e2',
+                                     fg='white',
+                                     font=('Helvetica', 9),
+                                     cursor='hand2')
         self.select_button.pack(side=tk.LEFT, padx=5)
 
-        self.upload_button = tk.Button(file_frame, text="Upload and Analyze", command=self.upload_file,
-                                     state=tk.DISABLED, width=15, relief=tk.GROOVE)
+        self.upload_button = tk.Button(file_frame, 
+                                     text="Upload & Analyze", 
+                                     command=self.upload_file,
+                                     state=tk.DISABLED, 
+                                     width=15, 
+                                     relief=tk.GROOVE,
+                                     bg='#4a90e2',
+                                     fg='white',
+                                     font=('Helvetica', 9),
+                                     cursor='hand2')
         self.upload_button.pack(side=tk.LEFT, padx=5)
 
-        self.file_label = tk.Label(file_frame, text="No file selected", fg="gray")
+        self.file_label = tk.Label(file_frame, 
+                                 text="No file selected", 
+                                 fg="#666666",
+                                 bg='#ffffff',
+                                 font=('Helvetica', 9))
         self.file_label.pack(side=tk.LEFT, padx=10)
 
-        # Live Camera Frame
-        camera_frame = tk.LabelFrame(main_container, text="Live Camera Control", padx=10, pady=10)
+        # Live Camera Frame with improved styling
+        camera_frame = tk.LabelFrame(main_container, 
+                                   text="Live Camera Detection", 
+                                   padx=15, 
+                                   pady=15,
+                                   font=('Helvetica', 10, 'bold'),
+                                   bg='#ffffff',
+                                   relief=tk.GROOVE)
         camera_frame.pack(fill=tk.X, pady=(0, 15))
 
-        self.start_live_button = tk.Button(camera_frame, text="Start Live Camera", command=self.start_live_camera, width=15, relief=tk.GROOVE)
+        self.start_live_button = tk.Button(camera_frame, 
+                                         text="▶ Start Camera", 
+                                         command=self.start_live_camera,
+                                         width=15, 
+                                         relief=tk.GROOVE,
+                                         bg='#2ecc71',
+                                         fg='black',
+                                         font=('Helvetica', 9),
+                                         cursor='hand2')
         self.start_live_button.pack(side=tk.LEFT, padx=5)
 
-        self.stop_live_button = tk.Button(camera_frame, text="Stop Live Camera", command=self.stop_live_camera, state=tk.DISABLED, width=15, relief=tk.GROOVE)
+        self.stop_live_button = tk.Button(camera_frame, 
+                                        text="⬛ Stop Camera", 
+                                        command=self.stop_live_camera,
+                                        state=tk.DISABLED, 
+                                        width=15, 
+                                        relief=tk.GROOVE,
+                                        bg='#e74c3c',
+                                        fg='black',
+                                        font=('Helvetica', 9),
+                                        cursor='hand2')
         self.stop_live_button.pack(side=tk.LEFT, padx=5)
 
         # Video Display Frame
-        self.video_frame = tk.LabelFrame(main_container, text="Camera Preview", padx=10, pady=10)
+        self.video_frame = tk.LabelFrame(main_container, 
+                                       text="Camera Preview", 
+                                       padx=15, 
+                                       pady=15,
+                                       font=('Helvetica', 10, 'bold'),
+                                       bg='#ffffff',
+                                       relief=tk.GROOVE)
         self.video_frame.pack(fill=tk.X, pady=(0, 15))
 
-        # Label to display the video feed
-        self.video_label = tk.Label(self.video_frame)
+        self.video_label = tk.Label(self.video_frame, bg='#000000')
         self.video_label.pack()
+
+        # Results Frame with improved styling
+        results_frame = tk.LabelFrame(main_container, 
+                                    text="Detection Results", 
+                                    padx=15, 
+                                    pady=15,
+                                    font=('Helvetica', 10, 'bold'),
+                                    bg='#ffffff',
+                                    relief=tk.GROOVE)
+        results_frame.pack(fill=tk.BOTH, expand=True)
+
+        self.result_text = scrolledtext.ScrolledText(
+            results_frame, 
+            width=80, 
+            height=10,
+            font=('Consolas', 10),
+            wrap=tk.WORD,
+            padx=10,
+            pady=10,
+            bg='#ffffff',
+            relief=tk.SOLID
+        )
+        self.result_text.pack(fill=tk.BOTH, expand=True)
+
+        # Status bar with improved styling
+        self.status_bar = tk.Label(main_container, 
+                                 text="Ready", 
+                                 bd=1, 
+                                 relief=tk.SUNKEN, 
+                                 anchor=tk.W,
+                                 bg='#e8e8e8',
+                                 font=('Helvetica', 9),
+                                 padx=10,
+                                 pady=5)
+        self.status_bar.pack(fill=tk.X, pady=(10, 0))
+
+        # Configure tags for text styling
+        self.result_text.tag_configure('grey_text', foreground='#666666')
+        self.result_text.tag_configure('success', foreground='#2ecc71')
+        self.result_text.tag_configure('error', foreground='#e74c3c')
 
         # Initialize video related variables
         self.video_capture = None
         self.update_id = None
-
-        # Results Frame
-        results_frame = tk.LabelFrame(main_container, text="Recognition Results", padx=10, pady=10)
-        results_frame.pack(fill=tk.BOTH, expand=True)
-
-        # ScrolledText with better styling
-        self.result_text = scrolledtext.ScrolledText(
-            results_frame, 
-            width=80, 
-            height=25,
-            font=('Consolas', 10),
-            wrap=tk.WORD,
-            padx=5,
-            pady=5
-        )
-        self.result_text.pack(fill=tk.BOTH, expand=True)
-
-        # Status bar
-        self.status_bar = tk.Label(main_container, text="Ready", bd=1, relief=tk.SUNKEN, anchor=tk.W)
-        self.status_bar.pack(fill=tk.X, pady=(10, 0))
 
         # WebSocket thread control
         self.ws = None
@@ -131,16 +213,26 @@ class ANPRFrontend:
             self.status_bar.config(text="Error during upload")
 
     def display_results(self, data):
+        # Get current content and make it grey
+        current_content = self.result_text.get("1.0", tk.END)
+        if current_content.strip():
+            self.result_text.delete("1.0", tk.END)
+            self.result_text.insert(tk.END, current_content, 'grey_text')
+        
+        # Add new results in black
         self.result_text.insert(tk.END, f"Filename: {data.get('filename')}\n")
         results = data.get("results", [])
         if not results:
             self.result_text.insert(tk.END, "No license plates recognized.\n")
-            return
-        for idx, plate in enumerate(results, start=1):
-            plate_text = plate.get("plate")
-            coords = plate.get("coordinates")
-            self.result_text.insert(tk.END, f"Plate {idx}: {plate_text}\n")
-            self.result_text.insert(tk.END, f"Coordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n")
+        else:
+            for idx, plate in enumerate(results, start=1):
+                plate_text = plate.get("plate")
+                coords = plate.get("coordinates")
+                self.result_text.insert(tk.END, f"Plate {idx}: {plate_text}\n")
+                self.result_text.insert(tk.END, f"Coordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n")
+        
+        # Scroll to bottom
+        self.scroll_to_bottom()
 
     def start_live_camera(self):
         if self.running:
@@ -177,12 +269,26 @@ class ANPRFrontend:
             data = json.loads(message)
             if "results" in data:
                 results = data["results"]
+                # Store the latest results for drawing rectangles
+                self.latest_results = results
                 if results:
+                    # Grey out existing content
+                    current_content = self.result_text.get("1.0", tk.END)
+                    if current_content.strip():
+                        self.result_text.after(0, lambda: (
+                            self.result_text.delete("1.0", tk.END),
+                            self.result_text.insert(tk.END, current_content, 'grey_text')
+                        ))
+                    
+                    # Add new results in black
                     for plate in results:
                         plate_text = plate.get("plate")
                         coords = plate.get("coordinates")
                         display_text = f"Live Plate: {plate_text}\nCoordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n"
-                        self.result_text.after(0, lambda: self.result_text.insert(tk.END, display_text))
+                        self.result_text.after(0, lambda t=display_text: (
+                            self.result_text.insert(tk.END, t),
+                            self.scroll_to_bottom()
+                        ))
             elif "error" in data:
                 error_msg = f"Error: {data['error']}\n"
                 self.result_text.after(0, lambda: self.result_text.insert(tk.END, error_msg))
@@ -252,7 +358,23 @@ class ANPRFrontend:
                 # Resize frame to fit nicely in the GUI
                 frame = cv2.resize(frame, (640, 360))
                 
-                # Update the preview at a higher rate than processing
+                # Draw rectangles for any detected plates
+                if hasattr(self, 'latest_results') and self.latest_results:
+                    for result in self.latest_results:
+                        coords = result.get('coordinates', {})
+                        # Scale coordinates to match resized frame
+                        x = int(coords.get('x', 0) * 640 / 1280)
+                        y = int(coords.get('y', 0) * 360 / 720)
+                        w = int(coords.get('width', 0) * 640 / 1280)
+                        h = int(coords.get('height', 0) * 360 / 720)
+                        
+                        # Draw rectangle
+                        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 1)
+                        # Draw text above rectangle
+                        cv2.putText(frame, result.get('plate', ''), (x, y - 10),
+                                  cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                
+                # Convert to RGB for tkinter
                 frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 image = Image.fromarray(frame_rgb)
                 photo = ImageTk.PhotoImage(image=image)
@@ -280,6 +402,11 @@ class ANPRFrontend:
                 
                 # Schedule the next update at a reasonable rate (30 FPS)
                 self.update_id = self.root.after(33, self.update_video_feed)  # ~30 FPS
+
+    def scroll_to_bottom(self):
+        """Scroll the result text widget to the bottom"""
+        self.result_text.see(tk.END)
+        self.result_text.update()
 
 if __name__ == "__main__":
     root = tk.Tk()
