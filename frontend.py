@@ -6,6 +6,9 @@ import os
 import threading
 import json
 import websocket
+import cv2
+import numpy as np
+from websocket import ABNF
 
 API_URL = "http://localhost:8000/upload/"  # Update if your backend is hosted elsewhere
 WEBSOCKET_URL = "ws://localhost:8000/live/"  # WebSocket endpoint for live camera
@@ -44,6 +47,18 @@ class ANPRFrontend:
 
         self.stop_live_button = tk.Button(camera_frame, text="Stop Live Camera", command=self.stop_live_camera, state=tk.DISABLED, width=15, relief=tk.GROOVE)
         self.stop_live_button.pack(side=tk.LEFT, padx=5)
+
+        # Video Display Frame
+        self.video_frame = tk.LabelFrame(main_container, text="Camera Preview", padx=10, pady=10)
+        self.video_frame.pack(fill=tk.X, pady=(0, 15))
+
+        # Label to display the video feed
+        self.video_label = tk.Label(self.video_frame)
+        self.video_label.pack()
+
+        # Initialize video related variables
+        self.video_capture = None
+        self.update_id = None
 
         # Results Frame
         results_frame = tk.LabelFrame(main_container, text="Recognition Results", padx=10, pady=10)
@@ -132,11 +147,25 @@ class ANPRFrontend:
             messagebox.showinfo("Live Camera", "Live camera is already running.")
             return
 
+        # Initialize video capture
+        self.video_capture = cv2.VideoCapture(0)
+        if not self.video_capture.isOpened():
+            messagebox.showerror("Error", "Could not access the camera.")
+            return
+
+        # Set camera resolution
+        self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+        self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+
         self.result_text.insert(tk.END, "Starting live camera...\n")
         self.start_live_button.config(state=tk.DISABLED)
         self.stop_live_button.config(state=tk.NORMAL)
         self.running = True
 
+        # Start video feed update
+        self.update_video_feed()
+
+        # Start WebSocket connection
         self.ws_thread = threading.Thread(target=self.run_websocket, daemon=True)
         self.ws_thread.start()
 
@@ -193,14 +222,64 @@ class ANPRFrontend:
 
         self.result_text.insert(tk.END, "Stopping live camera...\n")
         self.stop_live_button.config(state=tk.DISABLED)
+        self.running = False
+        
+        # Stop video feed updates
+        if self.update_id:
+            self.root.after_cancel(self.update_id)
+            self.update_id = None
+
+        # Release video capture
+        if self.video_capture:
+            self.video_capture.release()
+            self.video_capture = None
+
+        # Clear the video label
+        self.video_label.config(image='')
+        
+        # Close WebSocket connection
         if self.ws:
             self.ws.close()
-        self.running = False
 
     def on_closing(self):
-        if self.running and self.ws:
-            self.ws.close()
+        self.stop_live_camera()
         self.root.destroy()
+
+    def update_video_feed(self):
+        if self.video_capture is not None and self.running:
+            ret, frame = self.video_capture.read()
+            if ret:
+                # Resize frame to fit nicely in the GUI
+                frame = cv2.resize(frame, (640, 360))
+                
+                # Update the preview at a higher rate than processing
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                image = Image.fromarray(frame_rgb)
+                photo = ImageTk.PhotoImage(image=image)
+                self.video_label.config(image=photo)
+                self.video_label.image = photo
+                
+                # Process and send frames at a lower rate (every 5th frame)
+                if hasattr(self, 'frame_count'):
+                    self.frame_count += 1
+                else:
+                    self.frame_count = 0
+                    
+                if self.frame_count % 5 == 0:  # Process every 5th frame
+                    # Create a copy of the original frame for processing
+                    process_frame = cv2.resize(frame, (1280, 720))
+                    _, buffer = cv2.imencode('.jpg', process_frame)
+                    jpg_as_text = buffer.tobytes()
+                    
+                    # Send frame to WebSocket if connection is active
+                    if self.ws and self.ws.sock and self.ws.sock.connected:
+                        try:
+                            self.ws.send(jpg_as_text, opcode=websocket.ABNF.OPCODE_BINARY)
+                        except Exception as e:
+                            print(f"Error sending frame: {e}")
+                
+                # Schedule the next update at a reasonable rate (30 FPS)
+                self.update_id = self.root.after(33, self.update_video_feed)  # ~30 FPS
 
 if __name__ == "__main__":
     root = tk.Tk()

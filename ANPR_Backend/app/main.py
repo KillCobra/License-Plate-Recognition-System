@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.anpr import recognize_license_plate_from_image, recognize_license_plate_from_video, recognize_license_plate_from_frame
 import asyncio
 from fastapi import WebSocketDisconnect
+import numpy as np
 
 app = FastAPI(
     title="Automatic Number Plate Recognition API",
@@ -75,45 +76,30 @@ async def upload_file(file: UploadFile = File(...)):
 @app.websocket("/live/")
 async def live_camera(websocket: WebSocket):
     """
-    WebSocket endpoint to stream live camera feed and send detected license plate details.
+    WebSocket endpoint to receive camera frames and send detected license plate details.
     """
     await websocket.accept()
     print("WebSocket connection accepted")
     
-    # Initialize camera with a higher resolution
-    cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    
-    if not cap.isOpened():
-        await websocket.send_json({"error": "Could not access the camera."})
-        await websocket.close()
-        return
-
     try:
         while True:
-            ret, frame = cap.read()
-            if not ret:
-                await websocket.send_json({"error": "Failed to read from camera."})
-                break
-
-            # Process the frame to detect license plates
+            frame_data = await websocket.receive_bytes()
+            
+            nparr = np.frombuffer(frame_data, np.uint8)
+            frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+            
             results = recognize_license_plate_from_frame(frame)
             
-            # Always send a response, whether plates are detected or not
             if results:
                 await websocket.send_json({"status": "success", "results": results})
             else:
                 await websocket.send_json({"status": "scanning", "message": "No plates detected"})
             
-            # Add a small delay to prevent overwhelming the connection
-            await asyncio.sleep(0.1)
+            # Increased delay to reduce server load
+            await asyncio.sleep(0.2)  # 200ms delay between processing frames
             
     except WebSocketDisconnect:
         print("Client disconnected")
     except Exception as e:
         print(f"Error in WebSocket: {str(e)}")
         await websocket.send_json({"error": str(e)})
-    finally:
-        cap.release()
-        await websocket.close()
