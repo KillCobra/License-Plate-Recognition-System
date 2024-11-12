@@ -43,7 +43,6 @@ def recognize_license_plate_from_video(video_path: str):
     if not cap.isOpened():
         raise ValueError("Could not open the video.")
 
-    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     results = []
     processed_frames = 0
 
@@ -71,6 +70,27 @@ def recognize_license_plate_from_video(video_path: str):
                     })
 
     cap.release()
+    return results
+
+def recognize_license_plate_from_frame(frame):
+    """
+    Process a single frame to detect and recognize license plates.
+    """
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    plates = detect_license_plate_contours(gray, frame)
+
+    results = []
+
+    for plate in plates:
+        x, y, w, h = plate
+        plate_image = frame[y:y + h, x:x + w]
+        plate_text = extract_text_from_image(plate_image)
+        if plate_text:
+            results.append({
+                "plate": plate_text,
+                "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)}
+            })
+
     return results
 
 def detect_license_plate_contours(gray, image):
