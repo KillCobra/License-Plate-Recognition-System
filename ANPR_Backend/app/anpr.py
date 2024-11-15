@@ -2,42 +2,52 @@
 import cv2
 import easyocr
 import numpy as np
+import torch
+from yolov5 import YOLOv5  # Ensure yolov5 is correctly installed
 import os
-import tempfile
 
+# Initialize EasyOCR reader
 reader = easyocr.Reader(['en'])  # Initialize once to improve performance
+
+# Load the trained YOLOv5 model
+MODEL_PATH = 'path/to/your/trained_model.pt'  # Replace with your model path
+yolo_model = YOLOv5(MODEL_PATH, device='cuda' if torch.cuda.is_available() else 'cpu')
 
 def recognize_license_plate_from_image(image_path: str):
     """
-    Process a single image to detect and recognize license plates.
+    Process a single image to detect and recognize license plates using YOLOv5 and EasyOCR.
     """
     image = cv2.imread(image_path)
     if image is None:
         raise ValueError("Could not read the image.")
 
-    # Convert to grayscale
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # Use OpenCV to detect license plates based on contour analysis
-    plates = detect_license_plate_contours(gray, image)
+    # Perform detection using YOLOv5
+    detections = yolo_model.predict(image)
 
     results = []
 
-    for plate in plates:
-        x, y, w, h = plate
-        plate_image = image[y:y + h, x:x + w]
+    for det in detections.xyxy[0]:  # assuming one class
+        x1, y1, x2, y2, confidence, cls = det
+        x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
+
+        # Extract the license plate region
+        plate_image = image[y1:y2, x1:x2]
+
+        # Extract text from the plate image
         plate_text = extract_text_from_image(plate_image)
+
         if plate_text:
             results.append({
                 "plate": plate_text,
-                "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)}
+                "confidence": float(confidence),
+                "coordinates": {"x": x1, "y": y1, "width": x2 - x1, "height": y2 - y1}
             })
 
     return results
 
 def recognize_license_plate_from_video(video_path: str):
     """
-    Process a video to detect and recognize license plates in each frame.
+    Process a video to detect and recognize license plates in each frame using YOLOv5 and EasyOCR.
     """
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
@@ -53,20 +63,21 @@ def recognize_license_plate_from_video(video_path: str):
 
         processed_frames += 1
 
-        # Process every nth frame to reduce computation
-        if processed_frames % 30 == 0:  # Adjust the frame rate as needed
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            plates = detect_license_plate_contours(gray, frame)
+        if processed_frames % 30 == 0:
+            detections = yolo_model.predict(frame)
 
-            for plate in plates:
-                x, y, w, h = plate
-                plate_image = frame[y:y + h, x:x + w]
+            for det in detections.xyxy[0]:
+                x1, y1, x2, y2, confidence, cls = det
+                x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
+
+                plate_image = frame[y1:y2, x1:x2]
                 plate_text = extract_text_from_image(plate_image)
                 if plate_text:
                     results.append({
                         "frame": processed_frames,
                         "plate": plate_text,
-                        "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)}
+                        "confidence": float(confidence),
+                        "coordinates": {"x": x1, "y": y1, "width": x2 - x1, "height": y2 - y1}
                     })
 
     cap.release()
@@ -74,86 +85,42 @@ def recognize_license_plate_from_video(video_path: str):
 
 def recognize_license_plate_from_frame(frame):
     """
-    Process a single frame to detect and recognize license plates.
+    Process a single frame to detect and recognize license plates using YOLOv5 and EasyOCR.
     """
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    plates = detect_license_plate_contours(gray, frame)
+    detections = yolo_model.predict(frame)
 
     results = []
 
-    for plate in plates:
-        x, y, w, h = plate
-        plate_image = frame[y:y + h, x:x + w]
+    for det in detections.xyxy[0]:
+        x1, y1, x2, y2, confidence, cls = det
+        x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
+
+        plate_image = frame[y1:y2, x1:x2]
         plate_text = extract_text_from_image(plate_image)
         if plate_text:
             results.append({
                 "plate": plate_text,
-                "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)}
+                "confidence": float(confidence),
+                "coordinates": {"x": x1, "y": y1, "width": x2 - x1, "height": y2 - y1}
             })
 
     return results
-
-def detect_license_plate_contours(gray, image):
-    """
-    Detect contours that potentially contain license plates, including yellow plates.
-    """
-    # Apply bilateral filter to reduce noise while keeping edges sharp
-    blurred = cv2.bilateralFilter(gray, 11, 17, 17)
-    
-    # Edge detection on grayscale image
-    edged = cv2.Canny(blurred, 30, 200)
-    
-    # Convert image to HSV color space for color-based detection
-    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-    
-    # Define range for yellow color in HSV
-    lower_yellow = np.array([15, 100, 100])
-    upper_yellow = np.array([35, 255, 255])
-    
-    # Create a mask for yellow color
-    mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
-    
-    # Apply Canny edge detection on the yellow mask
-    edged_yellow = cv2.Canny(mask_yellow, 30, 200)
-    
-    # Combine edged images from grayscale and yellow mask
-    combined_edged = cv2.bitwise_or(edged, edged_yellow)
-    
-    # Find contours based on the combined edged image
-    contours, _ = cv2.findContours(combined_edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    
-    # Sort contours based on area, descending order
-    contours = sorted(contours, key=cv2.contourArea, reverse=True)[:10]
-    
-    plates = []
-    for cnt in contours:
-        # Approximate the contour
-        peri = cv2.arcLength(cnt, True)
-        approx = cv2.approxPolyDP(cnt, 0.018 * peri, True)
-        
-        # The license plate should be a rectangle (4 sides)
-        if len(approx) == 4:
-            x, y, w, h = cv2.boundingRect(approx)
-            aspect_ratio = w / float(h)
-            if 2 < aspect_ratio < 6:  # Typical aspect ratio for license plates
-                plates.append((x, y, w, h))
-    
-    return plates
 
 def extract_text_from_image(plate_image):
     """
     Extract text from the license plate image using EasyOCR.
     """
+    if plate_image.size == 0:
+        return None
+
     # Convert image to RGB (EasyOCR expects RGB)
-    plate_image = cv2.cvtColor(plate_image, cv2.COLOR_BGR2RGB)
-    
-    # Optional: Further preprocessing to improve OCR accuracy
-    # e.g., thresholding, resizing, etc.
-    # resized = cv2.resize(plate_image, None, fx=2, fy=2, interpolation=cv2.INTER_LINEAR)
-    # _, thresh = cv2.threshold(resized, 150, 255, cv2.THRESH_BINARY)
+    plate_image_rgb = cv2.cvtColor(plate_image, cv2.COLOR_BGR2RGB)
+
+    # Apply additional preprocessing if needed
+    # Example: Increase contrast, apply filters, etc.
 
     # Use EasyOCR to read text
-    result = reader.readtext(plate_image)
+    result = reader.readtext(plate_image_rgb)
 
     # Extract the text results
     plate_texts = [res[1] for res in result if res[2] > 0.5]  # Confidence filtering
@@ -161,7 +128,7 @@ def extract_text_from_image(plate_image):
     # Join texts if multiple detections
     full_text = " ".join(plate_texts).replace(" ", "").upper()
 
-    # Basic validation (you can enhance this with regex)
+    # Basic validation
     if len(full_text) >= 6:
         return full_text
     else:
