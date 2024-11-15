@@ -95,29 +95,49 @@ def recognize_license_plate_from_frame(frame):
 
 def detect_license_plate_contours(gray, image):
     """
-    Detect contours that potentially contain license plates.
+    Detect contours that potentially contain license plates, including yellow plates.
     """
-    # Apply some preprocessing
+    # Apply bilateral filter to reduce noise while keeping edges sharp
     blurred = cv2.bilateralFilter(gray, 11, 17, 17)
+    
+    # Edge detection on grayscale image
     edged = cv2.Canny(blurred, 30, 200)
-
-    # Find contours based on edges detected
-    contours, _ = cv2.findContours(edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    
+    # Convert image to HSV color space for color-based detection
+    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    
+    # Define range for yellow color in HSV
+    lower_yellow = np.array([15, 100, 100])
+    upper_yellow = np.array([35, 255, 255])
+    
+    # Create a mask for yellow color
+    mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
+    
+    # Apply Canny edge detection on the yellow mask
+    edged_yellow = cv2.Canny(mask_yellow, 30, 200)
+    
+    # Combine edged images from grayscale and yellow mask
+    combined_edged = cv2.bitwise_or(edged, edged_yellow)
+    
+    # Find contours based on the combined edged image
+    contours, _ = cv2.findContours(combined_edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    
+    # Sort contours based on area, descending order
     contours = sorted(contours, key=cv2.contourArea, reverse=True)[:10]
-
+    
     plates = []
     for cnt in contours:
         # Approximate the contour
         peri = cv2.arcLength(cnt, True)
         approx = cv2.approxPolyDP(cnt, 0.018 * peri, True)
-
+        
         # The license plate should be a rectangle (4 sides)
         if len(approx) == 4:
             x, y, w, h = cv2.boundingRect(approx)
             aspect_ratio = w / float(h)
             if 2 < aspect_ratio < 6:  # Typical aspect ratio for license plates
                 plates.append((x, y, w, h))
-
+    
     return plates
 
 def extract_text_from_image(plate_image):

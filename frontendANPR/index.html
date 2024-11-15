@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Number Plate Recognition</h1>
+        
+        <!-- File Upload Section -->
+        <div class="upload-area" id="uploadArea">
+            <p>Drag & Drop your Image or Video Here</p>
+            <p>or</p>
+            <button id="browseButton">Browse Files</button>
+            <input type="file" id="fileInput" accept="image/*,video/*" multiple hidden>
+        </div>
+        <div id="preview">
+            <!-- Preview of uploaded image/video will appear here -->
+            <canvas id="canvas" class="hidden"></canvas>
+        </div>
+        <button id="uploadButton" disabled>Upload</button>
+        <div id="loader" class="hidden"></div>
+        <div id="result">
+            <!-- Recognized license plates will be displayed here -->
+        </div>
+
+        <!-- Live Camera Section -->
+        <hr>
+        <div class="live-camera-section">
+            <h2>Live Camera Detection</h2>
+            <div class="camera-controls">
+                <button id="startCameraButton">Start Live Camera</button>
+                <button id="stopCameraButton" disabled>Stop Live Camera</button>
+            </div>
+            <div id="livePreview">
+                <video id="liveVideo" autoplay playsinline class="hidden"></video>
+                <canvas id="liveCanvas" class="hidden"></canvas>
+            </div>
+            <div id="liveResult">
+                <!-- Live detection results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

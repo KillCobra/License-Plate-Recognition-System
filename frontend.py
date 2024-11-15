@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 from websocket import ABNF
 
-API_URL = "http://localhost:8000/upload/"  # Update if your backend is hosted elsewhere
+API_URL = "http://localhost:8000/upload/"  
 WEBSOCKET_URL = "ws://localhost:8000/live/"  # WebSocket endpoint for live camera
 
 class ANPRFrontend:
@@ -32,45 +32,72 @@ class ANPRFrontend:
                              pady=10)
         title_label.pack()
 
+        # File Selection and Image Preview Frame
+        file_preview_frame = tk.Frame(main_container, bg='#f0f0f0')
+        file_preview_frame.pack(fill=tk.X, pady=(0, 15))
+
         # File Selection Frame with improved styling
-        file_frame = tk.LabelFrame(main_container, 
-                                 text="Image/Video Upload", 
-                                 padx=15, 
-                                 pady=15,
-                                 font=('Helvetica', 10, 'bold'),
-                                 bg='#ffffff',
-                                 relief=tk.GROOVE)
-        file_frame.pack(fill=tk.X, pady=(0, 15))
+        file_frame = tk.LabelFrame(
+            file_preview_frame,
+            text="Image/Video Upload",
+            padx=10,
+            pady=10,
+            font=('Helvetica', 10, 'bold'),
+            bg='#ffffff',
+            relief=tk.GROOVE
+        )
+        file_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-        self.select_button = tk.Button(file_frame, 
-                                     text="Select File", 
-                                     command=self.select_file,
-                                     width=15, 
-                                     relief=tk.GROOVE,
-                                     bg='#4a90e2',
-                                     fg='white',
-                                     font=('Helvetica', 9),
-                                     cursor='hand2')
-        self.select_button.pack(side=tk.LEFT, padx=5)
+        self.select_button = tk.Button(
+            file_frame,
+            text="Select File",
+            command=self.select_file,
+            width=15,
+            relief=tk.GROOVE,
+            bg='#4a90e2',
+            fg='white',
+            font=('Helvetica', 9),
+            cursor='hand2'
+        )
+        self.select_button.grid(row=0, column=0, padx=5, pady=5)
 
-        self.upload_button = tk.Button(file_frame, 
-                                     text="Upload & Analyze", 
-                                     command=self.upload_file,
-                                     state=tk.DISABLED, 
-                                     width=15, 
-                                     relief=tk.GROOVE,
-                                     bg='#4a90e2',
-                                     fg='white',
-                                     font=('Helvetica', 9),
-                                     cursor='hand2')
-        self.upload_button.pack(side=tk.LEFT, padx=5)
+        self.upload_button = tk.Button(
+            file_frame,
+            text="Upload & Analyze",
+            command=self.upload_file,
+            state=tk.DISABLED,
+            width=15,
+            relief=tk.GROOVE,
+            bg='#4a90e2',
+            fg='white',
+            font=('Helvetica', 9),
+            cursor='hand2'
+        )
+        self.upload_button.grid(row=0, column=1, padx=5, pady=5)
 
-        self.file_label = tk.Label(file_frame, 
-                                 text="No file selected", 
-                                 fg="#666666",
-                                 bg='#ffffff',
-                                 font=('Helvetica', 9))
-        self.file_label.pack(side=tk.LEFT, padx=10)
+        self.file_label = tk.Label(
+            file_frame,
+            text="No file selected",
+            fg="#666666",
+            bg='#ffffff',
+            font=('Helvetica', 9)
+        )
+        self.file_label.grid(row=0, column=2, padx=10, pady=5, sticky='w')
+
+        # Image Preview Section
+        preview_frame = tk.LabelFrame(
+            file_preview_frame,
+            text="Image Preview",
+            padx=10,
+            pady=10,
+            font=('Helvetica', 10, 'bold'),
+            bg='#ffffff',
+            relief=tk.GROOVE
+        )
+        preview_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=(10, 0))
+
+        self.image_preview_label = tk.Label(preview_frame, bg='#ffffff')
+        self.image_preview_label.pack()
 
         # Live Camera Frame with improved styling
         camera_frame = tk.LabelFrame(main_container, 
@@ -106,17 +133,19 @@ class ANPRFrontend:
         self.stop_live_button.pack(side=tk.LEFT, padx=5)
 
         # Video Display Frame
-        self.video_frame = tk.LabelFrame(main_container, 
-                                       text="Camera Preview", 
-                                       padx=15, 
-                                       pady=15,
-                                       font=('Helvetica', 10, 'bold'),
-                                       bg='#ffffff',
-                                       relief=tk.GROOVE)
+        self.video_frame = tk.LabelFrame(
+            main_container,
+            text="Camera Preview",
+            padx=0,
+            pady=0,
+            font=('Helvetica', 10, 'bold'),
+            bg='#ffffff',
+            relief=tk.GROOVE
+        )
         self.video_frame.pack(fill=tk.X, pady=(0, 15))
 
-        self.video_label = tk.Label(self.video_frame, bg='#000000')
-        self.video_label.pack()
+        self.video_label = tk.Label(self.video_frame, bg='#ffffff')
+        self.video_label.pack(padx=0, pady=0)
 
         # Results Frame with improved styling
         results_frame = tk.LabelFrame(main_container, 
@@ -184,10 +213,26 @@ class ANPRFrontend:
             self.result_text.delete(1.0, tk.END)
             self.result_text.insert(tk.END, "File selected. Ready to upload.\n")
             self.status_bar.config(text=f"Selected: {os.path.basename(filepath)}")
+
+            # Display image preview if the file is an image
+            file_extension = os.path.splitext(filepath)[1].lower()
+            if file_extension in [".jpg", ".jpeg", ".png"]:
+                try:
+                    image = Image.open(filepath)
+                    image.thumbnail((400, 400))
+                    self.preview_image = ImageTk.PhotoImage(image)
+                    self.image_preview_label.config(image=self.preview_image)
+                except Exception as e:
+                    self.result_text.insert(tk.END, f"Failed to load image preview: {str(e)}\n")
+                    self.image_preview_label.config(image='')
+            else:
+                # Clear image preview if not an image
+                self.image_preview_label.config(image='')
         else:
             self.file_label.config(text="No file selected")
             self.upload_button.config(state=tk.DISABLED)
             self.status_bar.config(text="Ready")
+            self.image_preview_label.config(image='')
 
     def upload_file(self):
         if not self.file_path:
