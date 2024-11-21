@@ -272,8 +272,9 @@ class ANPRFrontend:
         else:
             for idx, plate in enumerate(results, start=1):
                 plate_text = plate.get("plate")
+                accuracy = plate.get("accuracy", 0)
                 coords = plate.get("coordinates")
-                self.result_text.insert(tk.END, f"Plate {idx}: {plate_text}\n")
+                self.result_text.insert(tk.END, f"Plate {idx}: {plate_text} (Accuracy: {accuracy:.2f})\n")
                 self.result_text.insert(tk.END, f"Coordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n")
         
         # Scroll to bottom
@@ -328,8 +329,9 @@ class ANPRFrontend:
                     # Add new results in black
                     for plate in results:
                         plate_text = plate.get("plate")
+                        accuracy = plate.get("accuracy", 0)
                         coords = plate.get("coordinates")
-                        display_text = f"Live Plate: {plate_text}\nCoordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n"
+                        display_text = f"Live Plate: {plate_text} (Accuracy: {accuracy:.2f})\nCoordinates: x={coords.get('x')}, y={coords.get('y')}, width={coords.get('width')}, height={coords.get('height')}\n\n"
                         self.result_text.after(0, lambda t=display_text: (
                             self.result_text.insert(tk.END, t),
                             self.scroll_to_bottom()
@@ -415,8 +417,11 @@ class ANPRFrontend:
                         
                         # Draw rectangle
                         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 1)
-                        # Draw text above rectangle
-                        cv2.putText(frame, result.get('plate', ''), (x, y - 10),
+                        # Draw text above rectangle with accuracy
+                        plate_text = result.get('plate', '')
+                        accuracy = result.get('accuracy', 0)
+                        text = f"{plate_text} ({accuracy:.2f})"
+                        cv2.putText(frame, text, (x, y - 10),
                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
                 
                 # Convert to RGB for tkinter

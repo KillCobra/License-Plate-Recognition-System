@@ -26,10 +26,11 @@ def recognize_license_plate_from_image(image_path: str):
     for plate in plates:
         x, y, w, h, angle = plate
         plate_image = image[y:y + h, x:x + w]
-        plate_text = extract_text_from_image(plate_image, angle)
+        plate_text, accuracy = extract_text_from_image_with_confidence(plate_image, angle)
         if plate_text:
             results.append({
                 "plate": plate_text,
+                "accuracy": accuracy,
                 "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)},
                 "angle": float(angle)
             })
@@ -61,11 +62,12 @@ def recognize_license_plate_from_video(video_path: str):
             for plate in plates:
                 x, y, w, h, angle = plate
                 plate_image = frame[y:y + h, x:x + w]
-                plate_text = extract_text_from_image(plate_image, angle)
+                plate_text, accuracy = extract_text_from_image_with_confidence(plate_image, angle)
                 if plate_text:
                     results.append({
                         "frame": processed_frames,
                         "plate": plate_text,
+                        "accuracy": accuracy,
                         "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)},
                         "angle": float(angle)
                     })
@@ -85,10 +87,11 @@ def recognize_license_plate_from_frame(frame):
     for plate in plates:
         x, y, w, h, angle = plate
         plate_image = frame[y:y + h, x:x + w]
-        plate_text = extract_text_from_image(plate_image, angle)
+        plate_text, accuracy = extract_text_from_image_with_confidence(plate_image, angle)
         if plate_text:
             results.append({
                 "plate": plate_text,
+                "accuracy": accuracy,
                 "coordinates": {"x": int(x), "y": int(y), "width": int(w), "height": int(h)},
                 "angle": float(angle)
             })
@@ -172,9 +175,10 @@ def detect_license_plate_contours(gray, image):
     
     return plates
 
-def extract_text_from_image(plate_image, angle=0):
+def extract_text_from_image_with_confidence(plate_image, angle=0):
     """
     Extract text from the license plate image using EasyOCR, with rotation correction.
+    Returns the extracted text and the average confidence score.
     """
     # Correct the rotation if needed
     if abs(angle) > 5:
@@ -199,14 +203,18 @@ def extract_text_from_image(plate_image, angle=0):
     # Use EasyOCR to read text
     result = reader.readtext(enhanced)
     
-    # Extract the text results
-    plate_texts = [res[1] for res in result if res[2] > 0.5]  # Confidence filtering
+    # Extract the text results with confidence
+    plate_texts = [(res[1], res[2]) for res in result if res[2] > 0.5]  # Confidence filtering
     
+    if not plate_texts:
+        return None, 0.0
+
     # Join texts if multiple detections
-    full_text = " ".join(plate_texts).replace(" ", "").upper()
+    full_text = "".join([text for text, conf in plate_texts]).replace(" ", "").upper()
+    average_confidence = sum([conf for text, conf in plate_texts]) / len(plate_texts)
     
     # Basic validation
     if len(full_text) >= 6:
-        return full_text
+        return full_text, average_confidence
     else:
-        return None
+        return None, average_confidence

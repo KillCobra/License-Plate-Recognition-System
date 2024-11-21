@@ -91,7 +91,16 @@ async def live_camera(websocket: WebSocket):
             results = recognize_license_plate_from_frame(frame)
             
             if results:
-                await websocket.send_json({"status": "success", "results": results})
+                # Add accuracy to the results
+                enriched_results = []
+                for res in results:
+                    enriched_results.append({
+                        "plate": res["plate"],
+                        "accuracy": res["accuracy"],
+                        "coordinates": res["coordinates"],
+                        "angle": res["angle"]
+                    })
+                await websocket.send_json({"status": "success", "results": enriched_results})
             else:
                 await websocket.send_json({"status": "scanning", "message": "No plates detected"})
             

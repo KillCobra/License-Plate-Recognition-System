@@ -1,0 +1,2037 @@
+2024-11-19 01:47:55 [INFO] WebSocket connection accepted
+2024-11-19 01:47:55 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:55 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:55 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:55 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:55 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:55 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:55 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:55 [DEBUG] Found 139 contours in the combined edged image.
+2024-11-19 01:47:55 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 5.482050602389787
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 5.532077940795997
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.971907435523195
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (241, 291, 151, 347) with angle 25.95064353942871.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 5.7732370799214685
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.1631354150616944
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 3.927928061266113
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 3.4285714285714284
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (367, 308, 25, 8) with angle 0.0.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.3055556144841063
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (404, 308, 12, 23) with angle 15.945395469665527.
+2024-11-19 01:47:55 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:55 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:55 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:55 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:55 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:55 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:55 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:55 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:55 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:55 [DEBUG] Found 135 contours in the combined edged image.
+2024-11-19 01:47:55 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.163336965791304
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (265, 291, 127, 70) with angle 13.109208106994629.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 5.759289363507816
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 3.8354429082318404
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.195472747359009
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 3.969696760845821
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 2.942028803018098
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (295, 314, 22, 18) with angle 29.744882583618164.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 1.5728315965271642
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (297, 553, 36, 46) with angle 22.833656311035156.
+2024-11-19 01:47:55 [DEBUG] Approximated contour.
+2024-11-19 01:47:55 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:55 [DEBUG] Aspect ratio: 3.2922194611891347
+2024-11-19 01:47:55 [DEBUG] Detected potential license plate at (0, 6, 181, 132) with angle 34.05781173706055.
+2024-11-19 01:47:55 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:47:55 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:55 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:55 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:55 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:56 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:56 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:56 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:56 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:56 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:56 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:56 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:56 [DEBUG] Found 128 contours in the combined edged image.
+2024-11-19 01:47:56 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 2.9787741332086313
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (165, 244, 276, 95) with angle 8.800198554992676.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 5.689320420954216
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (264, 317, 127, 46) with angle 17.10272979736328.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.7466665347764376
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.8890662569863694
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (300, 291, 92, 64) with angle 13.465209007263184.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.7983868195606239
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 5.808586184551727
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.8901098269873273
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 2.3437500372907203
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (405, 308, 11, 21) with angle 15.945395469665527.
+2024-11-19 01:47:56 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:56 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:56 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:56 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:56 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:56 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:56 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:56 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:56 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:56 [DEBUG] Found 120 contours in the combined edged image.
+2024-11-19 01:47:56 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 2.93192765496602
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (242, 291, 150, 347) with angle 26.252391815185547.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 3.135593035541059
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 5.929763646308137
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 3.1284403101783598
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.8273585987618621
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (543, 258, 135, 95) with angle 12.482489585876465.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 1.6081080305151412
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 3.393281144786563
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (0, 7, 180, 130) with angle 34.695152282714844.
+2024-11-19 01:47:56 [DEBUG] Approximated contour.
+2024-11-19 01:47:56 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:56 [DEBUG] Aspect ratio: 2.522522398353611
+2024-11-19 01:47:56 [DEBUG] Detected potential license plate at (1069, 359, 14, 31) with angle 12.52880859375.
+2024-11-19 01:47:56 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:47:56 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:56 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:56 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:56 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:57 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:57 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:57 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:57 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:57 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:57 [DEBUG] Found 130 contours in the combined edged image.
+2024-11-19 01:47:57 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 8.04597201711508
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.206023313882049
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (265, 291, 127, 72) with angle 13.109208106994629.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.476744271753458
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.222221961599035
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.8905472821480542
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 115.41824757440978
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.5937503916984526
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (303, 327, 16, 12) with angle 18.43494987487793.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.6316793075422102
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (299, 553, 29, 46) with angle 22.833654403686523.
+2024-11-19 01:47:57 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:57 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:57 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:57 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:57 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:57 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:57 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:57 [DEBUG] Found 131 contours in the combined edged image.
+2024-11-19 01:47:57 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 4.057268064609846
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.8239039743462047
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (543, 258, 135, 96) with angle 12.898751258850098.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.8444655905512672
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.4933332901453706
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.4519874424016206
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (403, 248, 38, 91) with angle 1.8778774738311768.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 6.123287843900352
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.34042547843969
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.685804512796875
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (0, 7, 180, 130) with angle 34.731693267822266.
+2024-11-19 01:47:57 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:57 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:57 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:57 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:57 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:57 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:57 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:57 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:57 [DEBUG] Found 143 contours in the combined edged image.
+2024-11-19 01:47:57 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 6.2864624600216565
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.249941340284007
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (266, 291, 126, 72) with angle 13.109208106994629.
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.6153846153846154
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.477941069046287
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 2.2777775357705323
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.820105674915548
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.9310341307757484
+2024-11-19 01:47:57 [DEBUG] Approximated contour.
+2024-11-19 01:47:57 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:57 [DEBUG] Aspect ratio: 3.4408822477460497
+2024-11-19 01:47:57 [DEBUG] Detected potential license plate at (0, 7, 180, 131) with angle 34.695152282714844.
+2024-11-19 01:47:57 [DEBUG] Detected 2 license plate(s) in the current frame.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:57 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:57 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:57 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:57 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:58 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:58 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:58 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:58 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:58 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:58 [DEBUG] Found 129 contours in the combined edged image.
+2024-11-19 01:47:58 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.041804208174858
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.604895183444417
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (1010, 305, 54, 22) with angle 4.085616588592529.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.815627209649273
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (243, 291, 149, 345) with angle 27.202529907226562.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 7.648693755468418
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.9054727230281783
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (960, 362, 31, 28) with angle 43.02506637573242.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.500000112391601
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (961, 362, 20, 18) with angle 45.0.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.417910342648258
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.600632265765173
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (0, 7, 178, 130) with angle 34.695152282714844.
+2024-11-19 01:47:58 [DEBUG] Detected 5 license plate(s) in the current frame.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_5.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:58 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:58 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:58 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:58 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:58 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:58 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:58 [DEBUG] Found 131 contours in the combined edged image.
+2024-11-19 01:47:58 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.0947175361981265
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.65
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (1011, 305, 54, 21) with angle 0.0.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.563281404117365
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (265, 312, 126, 52) with angle 2.2025980949401855.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.719298535139952
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 4.338152236712076
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.163461443042294
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (295, 314, 22, 18) with angle 32.47119140625.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 4.024390882355774
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.8681318412712031
+2024-11-19 01:47:58 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:58 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:58 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:58 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:58 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:58 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:58 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:58 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:58 [DEBUG] Found 130 contours in the combined edged image.
+2024-11-19 01:47:58 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.2212190525235807
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.6389549780380674
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.56803709004924
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (265, 312, 126, 52) with angle 3.2704875469207764.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.4487635832546046
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 2.1111109807995176
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 4.397514117527664
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (165, 244, 346, 85) with angle 5.123165607452393.
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 1.364999895002719
+2024-11-19 01:47:58 [DEBUG] Approximated contour.
+2024-11-19 01:47:58 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:58 [DEBUG] Aspect ratio: 3.614744094146636
+2024-11-19 01:47:58 [DEBUG] Detected potential license plate at (0, 6, 180, 132) with angle 34.78425979614258.
+2024-11-19 01:47:58 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:58 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:58 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:58 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:59 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:59 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:59 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:59 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:59 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:59 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:59 [DEBUG] Found 126 contours in the combined edged image.
+2024-11-19 01:47:59 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.8455280400116383
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (265, 315, 78, 33) with angle 15.068489074707031.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.5135133571069415
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.1111109807995176
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 3.6865671005974554
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 4.024390882355774
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.2777777777777777
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 3.551314871478833
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (0, 6, 180, 132) with angle 34.6449089050293.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0476190353859485
+2024-11-19 01:47:59 [DEBUG] Detected 2 license plate(s) in the current frame.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:59 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:59 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:59 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:59 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:59 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:59 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:59 [DEBUG] Found 132 contours in the combined edged image.
+2024-11-19 01:47:59 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0185186209009969
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.6
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (1011, 305, 53, 21) with angle 0.0.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.975728133590449
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.93877563288644
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 3.111111323304377
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 3.163265396558265
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.5918841136779367
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (265, 311, 126, 52) with angle 4.899092674255371.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.4999996031865077
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.1111109807995176
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.8246997616337968
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (543, 258, 135, 95) with angle 12.482490539550781.
+2024-11-19 01:47:59 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:47:59 [DEBUG] No text detected in plate image.
+2024-11-19 01:47:59 [DEBUG] No text recognized for this plate.
+2024-11-19 01:47:59 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:47:59 [INFO] No license plates detected in the received frame.
+2024-11-19 01:47:59 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:47:59 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:47:59 [DEBUG] Applied bilateral filter.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:47:59 [DEBUG] Created yellow color mask.
+2024-11-19 01:47:59 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:47:59 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:47:59 [DEBUG] Found 134 contours in the combined edged image.
+2024-11-19 01:47:59 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0147492802161362
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.5684211040475557
+2024-11-19 01:47:59 [DEBUG] Detected potential license plate at (1011, 305, 53, 22) with angle 4.085616588592529.
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 5.469041048276499
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.4964027876732358
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 2.222221961599035
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 3.7083338063899953
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.8169010566792105
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:47:59 [DEBUG] Approximated contour.
+2024-11-19 01:47:59 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:47:59 [DEBUG] Aspect ratio: 1.7559054787770754
+2024-11-19 01:47:59 [DEBUG] Detected 1 license plate(s) in the current frame.
+2024-11-19 01:47:59 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:00 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:00 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:00 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:00 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:00 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:00 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:00 [DEBUG] Found 130 contours in the combined edged image.
+2024-11-19 01:48:00 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.9876033757003715
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 5.824360061030215
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 4.1065147482359095
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (260, 317, 128, 44) with angle 22.47943687438965.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 5.491366101717815
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 6.833333333333333
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 4.357894352565647
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 3.61240319175227
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 3.8918916437778672
+2024-11-19 01:48:00 [DEBUG] Detected 1 license plate(s) in the current frame.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:00 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:00 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:00 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:00 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:00 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:00 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:00 [DEBUG] Found 141 contours in the combined edged image.
+2024-11-19 01:48:00 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.6408667696064914
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (1010, 305, 54, 22) with angle 3.5763344764709473.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.634675044230329
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (1010, 305, 54, 22) with angle 3.5763344764709473.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.2297093377130315
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.259450473193927
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.6251506020527717
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (266, 312, 124, 49) with angle 1.6135388612747192.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.6125458046800616
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.222221961599035
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.2781787800257947
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:00 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:00 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:00 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:00 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:00 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:00 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:00 [DEBUG] Found 139 contours in the combined edged image.
+2024-11-19 01:48:00 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.1852987716948884
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.2384000097487995
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.7864693061479164
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 3.7872343949823812
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.7559054787770754
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 3.9310341307757484
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.8211753115047766
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (543, 258, 135, 96) with angle 12.898752212524414.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.9587628139131101
+2024-11-19 01:48:00 [DEBUG] Detected 1 license plate(s) in the current frame.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:00 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:00 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:00 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:00 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:00 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:00 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:00 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:00 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:00 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:00 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:00 [DEBUG] Found 126 contours in the combined edged image.
+2024-11-19 01:48:00 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.833106746511623
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (242, 291, 150, 347) with angle 27.198129653930664.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.3967027848898514
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.5135132733964207
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.138888851657005
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 5.718340480289236
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.0
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 3.346979096330233
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (0, 7, 180, 131) with angle 34.695152282714844.
+2024-11-19 01:48:00 [DEBUG] Approximated contour.
+2024-11-19 01:48:00 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:00 [DEBUG] Aspect ratio: 2.38888864301432
+2024-11-19 01:48:00 [DEBUG] Detected potential license plate at (295, 314, 20, 14) with angle 28.610462188720703.
+2024-11-19 01:48:00 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:00 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:01 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:01 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:01 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:01 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:01 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:01 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:01 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:01 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:01 [DEBUG] Found 140 contours in the combined edged image.
+2024-11-19 01:48:01 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.6363636109736643
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 3.814074993133545.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.5923345636760664
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 4.085616588592529.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.4066464687053695
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (265, 291, 127, 64) with angle 13.109208106994629.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.694444207091145
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.8520939144168715
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.222221961599035
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 4.142857142857143
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (362, 308, 30, 8) with angle 0.0.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.9101122612654897
+2024-11-19 01:48:01 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:01 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:01 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:01 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:01 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:01 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:01 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:01 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:01 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:01 [DEBUG] Found 139 contours in the combined edged image.
+2024-11-19 01:48:01 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.650349762936998
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 4.085616588592529.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.601398677329603
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 4.085616588592529.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 8.650115520925509
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 2.079310990105186
+2024-11-19 01:48:01 [DEBUG] Detected potential license plate at (260, 291, 132, 64) with angle 13.109208106994629.
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 3.0833333333333335
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 18.857142857142858
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 7.285714285714286
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 3.81592077678268
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:01 [DEBUG] Approximated contour.
+2024-11-19 01:48:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:01 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:01 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:01 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:01 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:01 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:01 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:01 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:01 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:01 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:01 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:01 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:02 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:02 [DEBUG] Found 139 contours in the combined edged image.
+2024-11-19 01:48:02 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6513761716672732
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 3.5763344764709473.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.607843205236987
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 3.814074993133545.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 5.3995325957343745
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.081250210881288
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.5669226795489037
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (260, 312, 130, 51) with angle 2.2025983333587646.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 5.7153852730572225
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.512820316693416
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.799999761162171
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6249998976015667
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 1.9809197005004053
+2024-11-19 01:48:02 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:02 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:02 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:02 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:02 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:02 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:02 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:02 [DEBUG] Found 137 contours in the combined edged image.
+2024-11-19 01:48:02 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.222402646747493
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.2719594754203367
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6363636363636362
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (265, 311, 125, 50) with angle 2.862405300140381.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 5.749172423576409
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.113122102836766
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 16.375
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 6.375
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (545, 360, 52, 9) with angle -0.0.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.971563740413152
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.531365242901397
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.0363742411255434
+2024-11-19 01:48:02 [DEBUG] Detected 2 license plate(s) in the current frame.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:02 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:02 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:02 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:02 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:02 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:02 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:02 [DEBUG] Found 133 contours in the combined edged image.
+2024-11-19 01:48:02 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 1.4960936997297303
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.9285714285714284
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (455, 317, 42, 15) with angle 0.0.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 8.329896762194213
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.0683356667510773
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (261, 291, 131, 70) with angle 7.236922264099121.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6249998976015667
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 5.625
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (551, 360, 46, 9) with angle -0.0.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.085106201415037
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 4.0658682323149105
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 1.544117489399506
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:02 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:02 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:02 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:02 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:02 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:02 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:02 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:02 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:02 [DEBUG] Found 152 contours in the combined edged image.
+2024-11-19 01:48:02 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6514654755576927
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 3.814074993133545.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.6026057983903663
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 3.8140745162963867.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 1.3872548606482873
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 16.5
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 6.5
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (545, 360, 53, 9) with angle -0.0.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.5376343768987693
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.0632106523799676
+2024-11-19 01:48:02 [DEBUG] Detected potential license plate at (229, 291, 163, 375) with angle 26.71272087097168.
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 2.0352943472525964
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 5.320473716222866
+2024-11-19 01:48:02 [DEBUG] Approximated contour.
+2024-11-19 01:48:02 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:02 [DEBUG] Aspect ratio: 3.555555358091741
+2024-11-19 01:48:02 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:02 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:02 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:02 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:03 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:03 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:03 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:03 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:03 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:03 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:03 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:03 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:03 [DEBUG] Found 141 contours in the combined edged image.
+2024-11-19 01:48:03 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.7
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.65
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (1011, 305, 54, 21) with angle 0.0.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.4137931301763595
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 5.742428658234442
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.575227242715963
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (265, 314, 66, 35) with angle 16.798372268676758.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.0189872387660914
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.964108445668786
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (165, 244, 276, 95) with angle 8.56593132019043.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 15.3377470779299
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 5.991150428299571
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (426, 341, 42, 8) with angle 1.7357045412063599.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 3.7551022307321817
+2024-11-19 01:48:03 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:03 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:03 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:03 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:03 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:03 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:03 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:03 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:03 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:03 [DEBUG] Found 144 contours in the combined edged image.
+2024-11-19 01:48:03 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 5.434614698879044
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 5.724209582154856
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 3.048212943693533
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 3.0714285714285716
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (452, 317, 44, 15) with angle -0.0.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 4.351620855508935
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (265, 314, 126, 49) with angle 17.10272979736328.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.256418140517201
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (301, 291, 91, 60) with angle 13.284866333007812.
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 1.9585800247766758
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.5232559791701448
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 2.154762025789566
+2024-11-19 01:48:03 [DEBUG] Approximated contour.
+2024-11-19 01:48:03 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:03 [DEBUG] Aspect ratio: 4.25
+2024-11-19 01:48:03 [DEBUG] Detected potential license plate at (357, 308, 35, 9) with angle -0.0.
+2024-11-19 01:48:03 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:48:03 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:03 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:03 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:03 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:04 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:04 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:04 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:04 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:04 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:04 [DEBUG] Found 140 contours in the combined edged image.
+2024-11-19 01:48:04 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.8207098042081715
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (243, 291, 149, 346) with angle 27.12130355834961.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 4.091918733162239
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.508333551826531
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.1367523054966076
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 3.286821977887635
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (295, 314, 25, 19) with angle 28.300756454467773.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 3.5433671584221207
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (0, 6, 179, 131) with angle 34.74678421020508.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.5079366676193198
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (303, 326, 16, 13) with angle 24.443954467773438.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.1562500400456712
+2024-11-19 01:48:04 [DEBUG] Detected 4 license plate(s) in the current frame.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_4.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:04 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:04 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:04 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:04 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:04 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:04 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:04 [DEBUG] Found 140 contours in the combined edged image.
+2024-11-19 01:48:04 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.658914594202881
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 3.012787342071533.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.609819114662488
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 3.012787342071533.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.6224999316525013
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (265, 312, 125, 49) with angle 2.2457425594329834.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.57446807264613
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.1702125701534714
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.0131665596457196
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.1538461538461537
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.4764796071238857
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 5.742139815476723
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:04 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:04 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:04 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:04 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:04 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:04 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:04 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:04 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:04 [DEBUG] Found 134 contours in the combined edged image.
+2024-11-19 01:48:04 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.7
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.65
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (1011, 305, 54, 21) with angle 0.0.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.1625376890201062
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (265, 291, 127, 70) with angle 13.284867286682129.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 5.738124816744325
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 1.949526987864082
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 16.375
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 6.374999806284881
+2024-11-19 01:48:04 [DEBUG] Detected potential license plate at (545, 360, 52, 9) with angle -0.0.
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.3953487132077633
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.0316453450167944
+2024-11-19 01:48:04 [DEBUG] Approximated contour.
+2024-11-19 01:48:04 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:04 [DEBUG] Aspect ratio: 2.464372537149314
+2024-11-19 01:48:04 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:04 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:04 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:04 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:05 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:05 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:05 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:05 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:05 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:05 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:05 [DEBUG] Found 157 contours in the combined edged image.
+2024-11-19 01:48:05 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.709374946251149
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (1010, 305, 55, 21) with angle 3.5763344764709473.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.6593752329116875
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (1011, 305, 54, 21) with angle 3.5763344764709473.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.367346957004765
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.6044346866008254
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (260, 317, 119, 44) with angle 25.974393844604492.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.391304265982729
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.0235295648350644
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.7716536137058725
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.0769230769230769
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.8372097053277914
+2024-11-19 01:48:05 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:05 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:05 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:05 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:05 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:05 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:05 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:05 [DEBUG] Found 135 contours in the combined edged image.
+2024-11-19 01:48:05 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.6742422251380242
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (1010, 305, 55, 22) with angle 4.39870548248291.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.624999964675026
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (1011, 305, 54, 22) with angle 4.39870548248291.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.0791366923560775
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.1405936916363983
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.088135350435247
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.7627272333831578
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (293, 291, 99, 72) with angle 13.109208106994629.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.2849464121791865
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.0235295648350644
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.158393857317863
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.2
+2024-11-19 01:48:05 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:05 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:05 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:05 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:05 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:05 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:05 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:05 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:05 [DEBUG] Found 150 contours in the combined edged image.
+2024-11-19 01:48:05 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.8258072867440513
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (242, 291, 150, 347) with angle 27.12518882751465.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 7.071428444920737
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.172037438555149
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 4.75
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (602, 302, 39, 9) with angle 0.0.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.4719101169283417
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 1.6806722731261854
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 3.472991658828137
+2024-11-19 01:48:05 [DEBUG] Detected potential license plate at (0, 7, 180, 130) with angle 34.592288970947266.
+2024-11-19 01:48:05 [DEBUG] Approximated contour.
+2024-11-19 01:48:05 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:05 [DEBUG] Aspect ratio: 2.6971830882619696
+2024-11-19 01:48:05 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:05 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:05 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:05 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:06 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:06 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:06 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:06 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:06 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:06 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:06 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:06 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:06 [DEBUG] Found 139 contours in the combined edged image.
+2024-11-19 01:48:06 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.084105156125537
+2024-11-19 01:48:06 [DEBUG] Detected potential license plate at (260, 291, 132, 70) with angle 7.236922264099121.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.806451350802356
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 3.1389831772662866
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 3.3568649099655055
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 7.769230769230769
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 4.75
+2024-11-19 01:48:06 [DEBUG] Detected potential license plate at (602, 302, 39, 9) with angle -0.0.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.9392622258513519
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.6883114217793713
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:06 [DEBUG] Detected 2 license plate(s) in the current frame.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:06 [INFO] No license plates detected in the received frame.
+2024-11-19 01:48:06 [DEBUG] Received frame data from WebSocket
+2024-11-19 01:48:06 [DEBUG] Current frame converted to grayscale.
+2024-11-19 01:48:06 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:06 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:06 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:06 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:06 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:06 [DEBUG] Found 142 contours in the combined edged image.
+2024-11-19 01:48:06 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.1769477102579247
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.2246621666984114
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.9250030694641054
+2024-11-19 01:48:06 [DEBUG] Detected potential license plate at (241, 291, 151, 347) with angle 26.252391815185547.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.3585613054510965
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 3.090908615066324
+2024-11-19 01:48:06 [DEBUG] Detected potential license plate at (1153, 336, 20, 28) with angle 26.56505012512207.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.7614504583376682
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.8951222881076717
+2024-11-19 01:48:06 [DEBUG] Detected potential license plate at (162, 244, 279, 98) with angle 8.923988342285156.
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.0
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 1.0
+2024-11-19 01:48:06 [DEBUG] Approximated contour.
+2024-11-19 01:48:06 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:06 [DEBUG] Aspect ratio: 2.2262309225005255
+2024-11-19 01:48:06 [DEBUG] Detected 3 license plate(s) in the current frame.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_1.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_2.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Extracted plate image saved: current_frame_plate_3.jpg
+2024-11-19 01:48:06 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:06 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:06 [DEBUG] Detected 0 license plate(s) in received frame.
+2024-11-19 01:48:06 [INFO] Client disconnected from WebSocket.
+2024-11-19 01:48:25 [DEBUG] Calling on_part_begin with no data
+2024-11-19 01:48:25 [DEBUG] Calling on_header_field with data[36:55]
+2024-11-19 01:48:25 [DEBUG] Calling on_header_value with data[57:98]
+2024-11-19 01:48:25 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:48:25 [DEBUG] Calling on_header_field with data[100:112]
+2024-11-19 01:48:25 [DEBUG] Calling on_header_value with data[114:133]
+2024-11-19 01:48:25 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:48:25 [DEBUG] Calling on_headers_finished with no data
+2024-11-19 01:48:25 [DEBUG] Calling on_part_data with data[137:232187]
+2024-11-19 01:48:25 [DEBUG] Calling on_part_end with no data
+2024-11-19 01:48:25 [DEBUG] Calling on_end with no data
+2024-11-19 01:48:25 [INFO] Received file upload: 38.jpg
+2024-11-19 01:48:25 [DEBUG] Saved uploaded file to uploads\38.jpg
+2024-11-19 01:48:25 [DEBUG] Input image converted to grayscale.
+2024-11-19 01:48:25 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:25 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:25 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:25 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:25 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:25 [DEBUG] Found 4021 contours in the combined edged image.
+2024-11-19 01:48:25 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 2.507441922610786
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (95, 75, 870, 372) with angle 5.562137603759766.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 3.550693479633462
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (296, 275, 576, 167) with angle 3.541015625.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 4.015873017795262
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (453, 330, 254, 64) with angle -0.0.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 2.2711838898962036
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (745, 0, 455, 271) with angle 23.75992774963379.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 4.587043498972838
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (453, 334, 252, 57) with angle 0.5208564400672913.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 1.3375088869915248
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 3.1154218404370075
+2024-11-19 01:48:25 [DEBUG] Detected potential license plate at (98, 78, 55, 153) with angle 4.037710666656494.
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 2.2975633323509483
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 1.2322020248801995
+2024-11-19 01:48:25 [DEBUG] Approximated contour.
+2024-11-19 01:48:25 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:25 [DEBUG] Aspect ratio: 2.4081069994874325
+2024-11-19 01:48:25 [DEBUG] Detected 6 license plate(s) in the input image.
+2024-11-19 01:48:25 [DEBUG] Extracted plate image saved: input_image_plate_1.jpg
+2024-11-19 01:48:27 [DEBUG] Extracted text from plate image: GLA250
+2024-11-19 01:48:27 [INFO] Recognized Plate Text: GLA250
+2024-11-19 01:48:27 [DEBUG] Extracted plate image saved: input_image_plate_2.jpg
+2024-11-19 01:48:27 [DEBUG] Extracted text from plate image: GLA2so
+2024-11-19 01:48:27 [INFO] Recognized Plate Text: GLA2so
+2024-11-19 01:48:27 [DEBUG] Extracted plate image saved: input_image_plate_3.jpg
+2024-11-19 01:48:27 [DEBUG] Extracted text from plate image: SN66 XMZ
+2024-11-19 01:48:27 [INFO] Recognized Plate Text: SN66 XMZ
+2024-11-19 01:48:27 [DEBUG] Extracted plate image saved: input_image_plate_4.jpg
+2024-11-19 01:48:28 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:28 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:28 [DEBUG] Extracted plate image saved: input_image_plate_5.jpg
+2024-11-19 01:48:28 [DEBUG] Extracted text from plate image: SN66 XMZ
+2024-11-19 01:48:28 [INFO] Recognized Plate Text: SN66 XMZ
+2024-11-19 01:48:28 [DEBUG] Extracted plate image saved: input_image_plate_6.jpg
+2024-11-19 01:48:28 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:28 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:28 [INFO] Processed image file: 38.jpg
+2024-11-19 01:48:28 [DEBUG] Calling on_part_begin with no data
+2024-11-19 01:48:28 [DEBUG] Calling on_header_field with data[36:55]
+2024-11-19 01:48:28 [DEBUG] Calling on_header_value with data[57:98]
+2024-11-19 01:48:28 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:48:28 [DEBUG] Calling on_header_field with data[100:112]
+2024-11-19 01:48:28 [DEBUG] Calling on_header_value with data[114:133]
+2024-11-19 01:48:28 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:48:28 [DEBUG] Calling on_headers_finished with no data
+2024-11-19 01:48:28 [DEBUG] Calling on_part_data with data[137:232187]
+2024-11-19 01:48:28 [DEBUG] Calling on_part_end with no data
+2024-11-19 01:48:28 [DEBUG] Calling on_end with no data
+2024-11-19 01:48:28 [INFO] Received file upload: 38.jpg
+2024-11-19 01:48:28 [DEBUG] Saved uploaded file to uploads\38.jpg
+2024-11-19 01:48:28 [DEBUG] Input image converted to grayscale.
+2024-11-19 01:48:28 [DEBUG] Applied bilateral filter.
+2024-11-19 01:48:28 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:48:28 [DEBUG] Created yellow color mask.
+2024-11-19 01:48:28 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:48:28 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:48:28 [DEBUG] Found 4021 contours in the combined edged image.
+2024-11-19 01:48:28 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 2.507441922610786
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (95, 75, 870, 372) with angle 5.562137603759766.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 3.550693479633462
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (296, 275, 576, 167) with angle 3.541015625.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 4.015873017795262
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (453, 330, 254, 64) with angle -0.0.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 2.2711838898962036
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (745, 0, 455, 271) with angle 23.75992774963379.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 4.587043498972838
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (453, 334, 252, 57) with angle 0.5208564400672913.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 1.3375088869915248
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 3.1154218404370075
+2024-11-19 01:48:28 [DEBUG] Detected potential license plate at (98, 78, 55, 153) with angle 4.037710666656494.
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 2.2975633323509483
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 1.2322020248801995
+2024-11-19 01:48:28 [DEBUG] Approximated contour.
+2024-11-19 01:48:28 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:48:28 [DEBUG] Aspect ratio: 2.4081069994874325
+2024-11-19 01:48:28 [DEBUG] Detected 6 license plate(s) in the input image.
+2024-11-19 01:48:28 [DEBUG] Extracted plate image saved: input_image_plate_1.jpg
+2024-11-19 01:48:29 [DEBUG] Extracted text from plate image: GLA250
+2024-11-19 01:48:29 [INFO] Recognized Plate Text: GLA250
+2024-11-19 01:48:29 [DEBUG] Extracted plate image saved: input_image_plate_2.jpg
+2024-11-19 01:48:29 [DEBUG] Extracted text from plate image: GLA2so
+2024-11-19 01:48:29 [INFO] Recognized Plate Text: GLA2so
+2024-11-19 01:48:29 [DEBUG] Extracted plate image saved: input_image_plate_3.jpg
+2024-11-19 01:48:30 [DEBUG] Extracted text from plate image: SN66 XMZ
+2024-11-19 01:48:30 [INFO] Recognized Plate Text: SN66 XMZ
+2024-11-19 01:48:30 [DEBUG] Extracted plate image saved: input_image_plate_4.jpg
+2024-11-19 01:48:30 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:30 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:30 [DEBUG] Extracted plate image saved: input_image_plate_5.jpg
+2024-11-19 01:48:30 [DEBUG] Extracted text from plate image: SN66 XMZ
+2024-11-19 01:48:30 [INFO] Recognized Plate Text: SN66 XMZ
+2024-11-19 01:48:30 [DEBUG] Extracted plate image saved: input_image_plate_6.jpg
+2024-11-19 01:48:30 [DEBUG] No text detected in plate image.
+2024-11-19 01:48:30 [DEBUG] No text recognized for this plate.
+2024-11-19 01:48:30 [INFO] Processed image file: 38.jpg
+2024-11-19 01:54:01 [DEBUG] Calling on_part_begin with no data
+2024-11-19 01:54:01 [DEBUG] Calling on_header_field with data[36:55]
+2024-11-19 01:54:01 [DEBUG] Calling on_header_value with data[57:98]
+2024-11-19 01:54:01 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:54:01 [DEBUG] Calling on_headers_finished with no data
+2024-11-19 01:54:01 [DEBUG] Calling on_part_data with data[102:232152]
+2024-11-19 01:54:01 [DEBUG] Calling on_part_end with no data
+2024-11-19 01:54:01 [DEBUG] Calling on_end with no data
+2024-11-19 01:54:01 [INFO] Received file upload: 38.jpg
+2024-11-19 01:54:01 [DEBUG] Saved uploaded file to uploads\38.jpg
+2024-11-19 01:54:01 [DEBUG] Input image converted to grayscale.
+2024-11-19 01:54:01 [DEBUG] Applied bilateral filter.
+2024-11-19 01:54:01 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:54:01 [DEBUG] Created yellow color mask.
+2024-11-19 01:54:01 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:54:01 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:54:01 [DEBUG] Found 4021 contours in the combined edged image.
+2024-11-19 01:54:01 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Aspect ratio 0.7476585835996292 outside range, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Contour too small, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Aspect ratio 1.2322020248801995 outside range, skipping.
+2024-11-19 01:54:01 [DEBUG] Approximated contour.
+2024-11-19 01:54:01 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:01 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:01 [DEBUG] Detected 3 license plate(s) in the input image.
+2024-11-19 01:54:01 [ERROR] Error processing image file 38.jpg: slice indices must be integers or None or have an __index__ method
+2024-11-19 01:54:07 [DEBUG] Calling on_part_begin with no data
+2024-11-19 01:54:07 [DEBUG] Calling on_header_field with data[36:55]
+2024-11-19 01:54:07 [DEBUG] Calling on_header_value with data[57:98]
+2024-11-19 01:54:07 [DEBUG] Calling on_header_end with no data
+2024-11-19 01:54:07 [DEBUG] Calling on_headers_finished with no data
+2024-11-19 01:54:07 [DEBUG] Calling on_part_data with data[102:232152]
+2024-11-19 01:54:07 [DEBUG] Calling on_part_end with no data
+2024-11-19 01:54:07 [DEBUG] Calling on_end with no data
+2024-11-19 01:54:07 [INFO] Received file upload: 38.jpg
+2024-11-19 01:54:07 [DEBUG] Saved uploaded file to uploads\38.jpg
+2024-11-19 01:54:07 [DEBUG] Input image converted to grayscale.
+2024-11-19 01:54:07 [DEBUG] Applied bilateral filter.
+2024-11-19 01:54:07 [DEBUG] Performed Canny edge detection on grayscale image.
+2024-11-19 01:54:07 [DEBUG] Created yellow color mask.
+2024-11-19 01:54:07 [DEBUG] Performed Canny edge detection on yellow mask.
+2024-11-19 01:54:07 [DEBUG] Combined edged images from grayscale and yellow mask.
+2024-11-19 01:54:08 [DEBUG] Found 4021 contours in the combined edged image.
+2024-11-19 01:54:08 [DEBUG] Sorted and selected top 10 contours based on area.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Aspect ratio 0.7476585835996292 outside range, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Contour too small, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Contour too large, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Aspect ratio 1.2322020248801995 outside range, skipping.
+2024-11-19 01:54:08 [DEBUG] Approximated contour.
+2024-11-19 01:54:08 [DEBUG] Obtained rotated rectangle for contour.
+2024-11-19 01:54:08 [DEBUG] Added potential license plate contour.
+2024-11-19 01:54:08 [DEBUG] Detected 3 license plate(s) in the input image.
+2024-11-19 01:54:08 [ERROR] Error processing image file 38.jpg: slice indices must be integers or None or have an __index__ method
